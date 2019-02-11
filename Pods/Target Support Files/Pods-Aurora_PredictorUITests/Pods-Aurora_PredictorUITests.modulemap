@@ -1,0 +1,6 @@
+framework module Pods_Aurora_PredictorUITests {
+  umbrella header "Pods-Aurora_PredictorUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

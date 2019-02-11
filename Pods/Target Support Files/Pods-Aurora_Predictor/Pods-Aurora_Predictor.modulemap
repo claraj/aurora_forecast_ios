@@ -1,0 +1,6 @@
+framework module Pods_Aurora_Predictor {
+  umbrella header "Pods-Aurora_Predictor-umbrella.h"
+
+  export *
+  module * { export * }
+}
