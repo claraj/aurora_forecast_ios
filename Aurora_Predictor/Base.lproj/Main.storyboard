@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--List-->
         <scene sceneID="iG2-6F-Wok">
             <objects>
                 <tableViewController id="867-Kv-1uF" customClass="TableViewController" customModule="Aurora_Predictor" customModuleProvider="target" sceneMemberID="viewController">
@@ -42,7 +42,7 @@
                             <outlet property="delegate" destination="867-Kv-1uF" id="4gB-Kn-V4B"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="Ct4-CB-eg8"/>
+                    <tabBarItem key="tabBarItem" title="List" id="Ct4-CB-eg8"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0kc-Kl-23o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -70,7 +70,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wYe-fU-JUP"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="eLF-Dx-GYO"/>
+                    <tabBarItem key="tabBarItem" title="Chart" id="eLF-Dx-GYO"/>
                     <connections>
                         <outlet property="chartView" destination="bAl-tm-fXz" id="fHi-zg-nHs"/>
                     </connections>
