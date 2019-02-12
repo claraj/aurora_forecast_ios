@@ -9,7 +9,7 @@
 import UIKit
 
 class TableViewController: UITableViewController, ForecastController {
-
+    
     @IBOutlet var forecastLabel: UILabel!
     
     var forecasts: [Forecast]?
@@ -21,7 +21,7 @@ class TableViewController: UITableViewController, ForecastController {
         }
     }
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -30,17 +30,19 @@ class TableViewController: UITableViewController, ForecastController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell")
-
+    
         let forecast = forecasts![indexPath.row]
-
+        
         cell!.textLabel!.text = forecasts![indexPath.row].description
-
+        
+        // Observed forecasts are ones that have already happened, display in gray
         if forecast.observed == Forecast.Observed.Observed {
             cell?.backgroundColor = UIColor.gray
         } else {
             cell?.backgroundColor = UIColor.white
         }
         
+        // Interesting kp values in purple 
         if forecast.kp >= 4 {
             cell?.textLabel?.textColor = UIColor.purple
             
@@ -63,8 +65,8 @@ class TableViewController: UITableViewController, ForecastController {
         
     }
     
-    }
+}
 
 
-    
+
 

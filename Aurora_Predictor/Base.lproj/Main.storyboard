@@ -48,19 +48,31 @@
             </objects>
             <point key="canvasLocation" x="-454" y="-166"/>
         </scene>
-        <!--Item 2-->
+        <!--Chart-->
         <scene sceneID="GnC-PK-I4D">
             <objects>
-                <viewController id="PqW-8T-TYU" customClass="ChartViewController" customModule="Aurora_Predictor" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="m9W-cL-gBx" customClass="LineChartView" customModule="Charts">
+                <viewController title="Chart" id="PqW-8T-TYU" customClass="ChartViewController" customModule="Aurora_Predictor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6dR-Hf-VaX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAl-tm-fXz" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="10" y="50" width="355" height="538"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Pzt-Tb-Hnw"/>
+                        <constraints>
+                            <constraint firstItem="bAl-tm-fXz" firstAttribute="top" secondItem="wYe-fU-JUP" secondAttribute="top" constant="30" id="XVo-ak-Ccm"/>
+                            <constraint firstItem="bAl-tm-fXz" firstAttribute="leading" secondItem="wYe-fU-JUP" secondAttribute="leading" constant="10" id="Y4R-wP-KGN"/>
+                            <constraint firstItem="wYe-fU-JUP" firstAttribute="trailing" secondItem="bAl-tm-fXz" secondAttribute="trailing" constant="10" id="jzi-SI-hCu"/>
+                            <constraint firstItem="wYe-fU-JUP" firstAttribute="bottom" secondItem="bAl-tm-fXz" secondAttribute="bottom" constant="30" id="sRj-3e-1SM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wYe-fU-JUP"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="eLF-Dx-GYO"/>
                     <connections>
-                        <outlet property="chartView" destination="m9W-cL-gBx" id="Mk0-K2-YWS"/>
+                        <outlet property="chartView" destination="bAl-tm-fXz" id="fHi-zg-nHs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0qR-Ax-ch4" userLabel="First Responder" sceneMemberID="firstResponder"/>
