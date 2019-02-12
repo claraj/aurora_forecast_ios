@@ -99,6 +99,9 @@ class ChartViewController: UIViewController, ForecastController {
             
             chartView.xAxis.valueFormatter = xAxisFormatter
             chartView.xAxis.labelRotationAngle = 90
+            
+            chartView.xAxis.labelPosition = .bottom
+            
             chartView.leftAxis.axisMinimum = 0.0
             chartView.leftAxis.axisMaximum = 9.0
             
